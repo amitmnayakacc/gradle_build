@@ -2,10 +2,10 @@ name: "Gradle Build"
 on:
   push:
     branches:
-      - master
+      - main
   pull_request:
     branches:
-      - master
+      - main
 
 jobs:
   GradleBuild:
@@ -24,7 +24,7 @@ jobs:
         uses: gradle/gradle-build-action@v2
         with:
           arguments: test
-      - name: Run Coverage
+      - name: Run Code Coverage
         run: |
           chmod +x gradlew
           ./gradlew testCoverage

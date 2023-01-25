@@ -28,4 +28,4 @@ jobs:
           arguments: test
       - name: Run Code Coverage
         run: |
-          gradle testCoverage
+          gradle jacocoTestReport

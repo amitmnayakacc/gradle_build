@@ -26,5 +26,4 @@ jobs:
           arguments: test
       - name: Run Code Coverage
         run: |
-          chmod +x gradlew
-          ./gradlew testCoverage
+          gradle testCoverage
